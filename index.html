@@ -1,0 +1,756 @@
+
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>இனிய பிறந்தநாள் போஹன் 🎂</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Baloo Thambi 2', cursive;
+    color: white;
+    background: linear-gradient(135deg, #17052e, #47116b, #8d236e, #241044);
+    background-size: 300% 300%;
+    animation: backgroundFlow 12s ease infinite;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+@keyframes backgroundFlow {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+}
+
+/* Main birthday page */
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 65px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.tag {
+    color: #ffe3a8;
+    font-size: 19px;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.hero h1 {
+    font-size: clamp(38px, 8vw, 76px);
+    line-height: 1.35;
+    color: #ffe3a8;
+    text-shadow: 0 0 15px #ff64db, 0 0 35px #ff64db;
+    animation: titleGlow 2s infinite alternate;
+}
+
+@keyframes titleGlow {
+    from { text-shadow: 0 0 12px #ff64db; }
+    to { text-shadow: 0 0 25px #ff64db, 0 0 50px #ff9ae8; }
+}
+
+.hero p {
+    margin-top: 12px;
+    font-size: clamp(17px, 4vw, 24px);
+}
+
+.main-photo {
+    width: min(310px, 78vw);
+    height: 370px;
+    object-fit: cover;
+    border-radius: 28px;
+    border: 5px solid #ffe3a8;
+    margin: 28px 0 20px;
+    box-shadow: 0 0 30px #ff62d4, 0 0 65px #9d65ff;
+    animation: photoFloat 4s ease-in-out infinite;
+}
+
+@keyframes photoFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.gold-text {
+    color: #ffe3a8;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.scroll-btn,
+.open-btn {
+    border: none;
+    border-radius: 50px;
+    padding: 14px 27px;
+    font-size: 18px;
+    font-weight: 800;
+    background: linear-gradient(45deg, #ff4db8, #ff9cdb, #ffdc8b);
+    color: #401047;
+    box-shadow: 0 0 22px #ff68cf;
+    transition: .3s;
+}
+
+.scroll-btn:hover,
+.open-btn:hover {
+    transform: scale(1.06);
+    box-shadow: 0 0 35px #ffd5f2;
+}
+
+/* Colourful birthday surprise background */
+
+.surprise-section {
+    min-height: 100vh;
+    padding: 80px 18px 70px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+    background:
+        radial-gradient(ellipse at 15% 20%, #ff65c9 0%, transparent 35%),
+        radial-gradient(ellipse at 85% 15%, #ffd166 0%, transparent 30%),
+        radial-gradient(ellipse at 80% 80%, #7c5cff 0%, transparent 40%),
+        radial-gradient(ellipse at 15% 85%, #ff4081 0%, transparent 40%),
+        linear-gradient(135deg, #6a11cb, #d63384, #ff6b9a, #5b21b6);
+    background-size: 200% 200%;
+    animation: birthdayBackground 10s ease infinite;
+}
+
+@keyframes birthdayBackground {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+}
+
+.surprise-section::before {
+    content: "✨ ⭐ 🎈 ✨ 🎂 ⭐ 🎈 ✨ 💖 🌟";
+    position: absolute;
+    inset: 0;
+    font-size: 30px;
+    line-height: 100px;
+    letter-spacing: 20px;
+    opacity: .22;
+    overflow: hidden;
+    overflow-wrap: anywhere;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.surprise-section h2 {
+    color: #fff2ae;
+    font-size: clamp(34px, 7vw, 58px);
+    text-shadow: 0 0 20px #ff70d4, 0 0 35px #ffdd73;
+    margin-bottom: 12px;
+}
+
+.intro {
+    font-size: 19px;
+    margin: 0 auto 30px;
+    max-width: 600px;
+}
+
+/* Gift box */
+
+.gift-wrap {
+    margin: 35px auto 20px;
+    width: 190px;
+    height: 190px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.gift {
+    border: none;
+    background: transparent;
+    font-size: 125px;
+    filter: drop-shadow(0 0 22px #ff6ccf);
+    animation: giftBounce 1.5s infinite;
+    transition: transform .3s;
+}
+
+.gift:hover {
+    transform: scale(1.15) rotate(-7deg);
+}
+
+@keyframes giftBounce {
+    0%, 100% { transform: translateY(0) rotate(0); }
+    50% { transform: translateY(-13px) rotate(4deg); }
+}
+
+.open-btn {
+    margin: 10px 0 25px;
+}
+
+.hint {
+    color: #fff0ff;
+    font-size: 17px;
+}
+
+/* Revealed surprise */
+
+#surpriseContent {
+    display: none;
+    animation: reveal 1s ease both;
+}
+
+#surpriseContent.show {
+    display: block;
+}
+
+@keyframes reveal {
+    from { opacity: 0; transform: translateY(35px) scale(.95); }
+    to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+/* Hanging balloons and stars */
+
+.decor-stage {
+    height: 240px;
+    position: relative;
+    margin: 0 -18px 10px;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.hanging {
+    position: absolute;
+    top: 0;
+    transform-origin: top center;
+    animation: hangingSwing 3s ease-in-out infinite alternate;
+}
+
+.hanging .string {
+    width: 2px;
+    height: 62px;
+    margin: auto;
+    background: linear-gradient(#fff1bd, #ff8be0);
+    box-shadow: 0 0 5px #fff;
+}
+
+.hanging .balloon {
+    width: 53px;
+    height: 66px;
+    border-radius: 50% 50% 45% 45%;
+    position: relative;
+    box-shadow: inset -8px -6px 12px #0003, 0 0 17px #ffffff4d;
+}
+
+.hanging .balloon::after {
+    content: "";
+    position: absolute;
+    bottom: -7px;
+    left: 22px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 9px solid var(--balloon-color);
+}
+
+.hanging .star {
+    color: #ffe69a;
+    font-size: 40px;
+    filter: drop-shadow(0 0 10px #ffdd71);
+}
+
+.hanging .moon {
+    font-size: 42px;
+    filter: drop-shadow(0 0 10px #fff0a3);
+}
+
+@keyframes hangingSwing {
+    from { transform: rotate(-8deg); }
+    to { transform: rotate(8deg); }
+}
+
+/* Birthday message card */
+
+.surprise-message {
+    position: relative;
+    max-width: 800px;
+    margin: 25px auto 35px;
+    padding: 30px 22px;
+    border: 2px solid #ffe6a7;
+    border-radius: 28px;
+    background: linear-gradient(
+        135deg,
+        rgba(255, 80, 190, .82),
+        rgba(112, 45, 220, .85),
+        rgba(255, 155, 95, .76)
+    );
+    backdrop-filter: blur(10px);
+    box-shadow:
+        0 0 20px #ff83df,
+        0 0 45px #c45cff,
+        inset 0 0 25px #ffffff20;
+}
+
+.surprise-message h3 {
+    color: #fff1a8;
+    font-size: clamp(29px, 6vw, 45px);
+    margin-bottom: 12px;
+    text-shadow: 0 0 15px #ffdf73, 0 0 30px #ff6bd6;
+}
+
+.surprise-message p {
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+/* Photo slideshow */
+
+.gallery-title {
+    font-size: clamp(27px, 5vw, 40px);
+    color: #fff1a8;
+    text-shadow: 0 0 18px #ff68d5;
+    margin: 15px 0 22px;
+}
+
+.gallery {
+    max-width: 780px;
+    margin: 0 auto;
+    position: relative;
+    padding: 12px;
+    border: 2px solid #ffdc8b;
+    border-radius: 28px;
+    background: #ffffff20;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 0 35px #ff7ada, 0 0 65px #a46cff;
+}
+
+.slide {
+    display: none;
+}
+
+.slide.active {
+    display: block;
+    animation: slideReveal .8s ease;
+}
+
+@keyframes slideReveal {
+    from { opacity: 0; transform: scale(.96); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+.slide img {
+    width: 100%;
+    height: min(470px, 68vh);
+    object-fit: contain;
+    border-radius: 18px;
+    background: #35134d;
+}
+
+.slide-caption {
+    color: #fff1a8;
+    font-size: 23px;
+    padding: 12px 5px 6px;
+    text-shadow: 0 0 10px #ff68d5;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0 30px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #ffffff70;
+    border: none;
+}
+
+.dot.active {
+    background: #fff1a8;
+    box-shadow: 0 0 12px #ffe3a8;
+    transform: scale(1.25);
+}
+
+.wish-line {
+    color: #fff0ff;
+    font-size: clamp(22px, 4vw, 30px);
+    margin: 20px 0;
+    line-height: 1.8;
+    text-shadow: 0 0 12px #ff68d5;
+}
+
+/* Falling celebration emojis */
+
+.confetti {
+    position: fixed;
+    top: -30px;
+    z-index: 999;
+    pointer-events: none;
+    animation: confettiFall linear forwards;
+}
+
+@keyframes confettiFall {
+    to {
+        transform: translateY(110vh) rotate(800deg);
+        opacity: 0;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 28px 15px;
+    background: #180626;
+    color: #ffe3a8;
+    font-size: 19px;
+    box-shadow: 0 -5px 25px #ff68d544;
+}
+
+@media (max-width: 600px) {
+    .hero { padding: 50px 15px; }
+    .main-photo { height: 340px; }
+    .surprise-section { padding-top: 55px; }
+    .decor-stage { height: 190px; }
+    .hanging .string { height: 48px; }
+    .hanging .balloon { width: 39px; height: 51px; }
+    .hanging .balloon::after { left: 15px; }
+    .slide img { height: 55vh; }
+    .surprise-message p { font-size: 18px; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Main page: this photo stays fixed -->
+
+<section class="hero">
+    <div class="tag">✨ ஒரு ஸ்பெஷல் நாள் ✨</div>
+
+    <h1>இனிய பிறந்தநாள்<br>போஹன்! 🎂</h1>
+
+    <p>உனக்காக ஒரு அழகான சின்ன Surprise! 💖</p>
+
+    <img class="main-photo" src="pohan1.jpeg" alt="போஹனின் புகைப்படம்">
+
+    <div class="gold-text">🎉 என்றும் மகிழ்ச்சியுடன் இரு! 🎉</div>
+    <br>
+
+    <button class="scroll-btn"
+        onclick="document.getElementById('surprise').scrollIntoView({behavior:'smooth'})">
+        🎁 Surprise பார்க்கலாம்
+    </button>
+</section>
+
+<!-- Birthday surprise section -->
+
+<section class="surprise-section" id="surprise">
+    <h2>🎁 உனக்காக ஒரு Surprise!</h2>
+
+    <p class="intro">
+        இந்த அழகான பரிசுப் பெட்டியைத் திறந்து பாரு...
+        உனக்காக ஒரு மாயாஜால உலகம் காத்திருக்கிறது! 💜
+    </p>
+
+    <div class="gift-wrap">
+        <button class="gift" id="giftButton"
+            onclick="openGift()" aria-label="பரிசுப் பெட்டியைத் திறக்கவும்">
+            🎁
+        </button>
+    </div>
+
+    <button class="open-btn" id="openButton" onclick="openGift()">
+        💝 பரிசைத் திறக்கவும் 💝
+    </button>
+
+    <p class="hint" id="hint">👆 பரிசுப் பெட்டியைத் தொடு!</p>
+
+    <!-- This entire area appears after the gift is clicked -->
+
+    <div id="surpriseContent">
+
+        <div class="decor-stage" id="decorStage"></div>
+
+        <div class="surprise-message">
+            <h3>🎉 Happy Birthday போஹன்! 🎉</h3>
+
+            <p>
+                உன் வாழ்க்கை முழுவதும் மகிழ்ச்சி நிறைந்திருக்கட்டும்! 💖<br>
+                நீ நினைக்கும் எல்லா நல்ல விஷயங்களும் நடக்கட்டும்! ✨<br>
+                உன் முகத்தில் எப்போதும் இந்த அழகான புன்னகை இருக்கட்டும்! 😊<br>
+                இந்த நாள் உனக்கு மறக்க முடியாத நாளாக அமையட்டும்! 🎂
+            </p>
+        </div>
+
+        <h3 class="gallery-title">📸 நம் அழகான நினைவுகள் 💕</h3>
+
+        <div class="gallery">
+            <div class="slide active">
+                <img src="pohan1.jpeg" alt="போஹனின் நினைவு 1">
+                <div class="slide-caption">💖 என்றும் ஸ்பெஷல்!</div>
+            </div>
+
+            <div class="slide">
+                <img src="pohan2.jpeg" alt="போஹனின் நினைவு 2">
+                <div class="slide-caption">🌟 என்றும் சந்தோஷமாக இரு!</div>
+            </div>
+
+            <div class="slide">
+                <img src="pohan3.jpeg" alt="போஹனின் நினைவு 3">
+                <div class="slide-caption">🎂 உனக்கான அழகான நினைவு!</div>
+            </div>
+
+            <div class="slide">
+                <img src="pohan4.jpeg" alt="போஹனின் நினைவு 4">
+                <div class="slide-caption">💜 Lots of love, போஹன்!</div>
+            </div>
+        </div>
+
+        <div class="dots" id="dots">
+            <button class="dot active" aria-label="புகைப்படம் 1"></button>
+            <button class="dot" aria-label="புகைப்படம் 2"></button>
+            <button class="dot" aria-label="புகைப்படம் 3"></button>
+            <button class="dot" aria-label="புகைப்படம் 4"></button>
+        </div>
+
+        <p class="wish-line">
+            🎈 உன் கனவுகள் எல்லாம் நனவாகட்டும்! ⭐<br>
+            💖 Stay Happy, Stay Awesome! 💖
+        </p>
+
+    </div>
+</section>
+
+<footer>💝 அன்புடன் வழங்குபவர்: வெற்றி வேல் 💝</footer>
+
+<audio id="birthdayMusic" src="birthday.mp3" loop preload="auto"></audio>
+
+<script>
+let surpriseOpened = false;
+let slideIndex = 0;
+let slideTimer = null;
+
+let musicContext = null;
+let musicTimer = null;
+let musicPlaying = false;
+let musicNote = 0;
+
+const notes = [
+    261.63, 329.63, 392.00, 523.25,
+    392.00, 329.63, 293.66, 349.23
+];
+
+function openGift() {
+    if (surpriseOpened) {
+        document.getElementById('surpriseContent')
+            .scrollIntoView({ behavior: 'smooth', block: 'start' });
+        return;
+    }
+
+    surpriseOpened = true;
+
+    document.getElementById('giftButton').textContent = '🎉';
+    document.getElementById('giftButton').style.animation = 'none';
+
+    document.getElementById('hint').style.display = 'none';
+    document.getElementById('openButton').style.display = 'none';
+
+    document.getElementById('surpriseContent').classList.add('show');
+
+    createHangingDecorations();
+    celebrate();
+    startSlideshow();
+
+    const birthdayMusic = document.getElementById('birthdayMusic');
+    birthdayMusic.volume = 0.8;
+    birthdayMusic.play().catch(error => {
+        console.log('Check that birthday.mp3 is in the same folder as this HTML file.');
+    });
+
+    setTimeout(() => {
+        document.getElementById('surpriseContent')
+            .scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 250);
+}
+
+function createHangingDecorations() {
+    const stage = document.getElementById('decorStage');
+
+    if (stage.children.length > 0) return;
+
+    const decorations = [
+        { x: 3, type: 'balloon', color: '#ff5aab', delay: '0s' },
+        { x: 13, type: 'star', delay: '.5s' },
+        { x: 23, type: 'balloon', color: '#8d76ff', delay: '.2s' },
+        { x: 34, type: 'moon', delay: '.8s' },
+        { x: 45, type: 'balloon', color: '#ffcb61', delay: '.4s' },
+        { x: 56, type: 'star', delay: '.1s' },
+        { x: 67, type: 'balloon', color: '#55e6d1', delay: '.7s' },
+        { x: 78, type: 'moon', delay: '.3s' },
+        { x: 88, type: 'balloon', color: '#ff76d8', delay: '.6s' },
+        { x: 96, type: 'star', delay: '.2s' }
+    ];
+
+    decorations.forEach(item => {
+        const holder = document.createElement('div');
+        holder.className = 'hanging';
+        holder.style.left = item.x + '%';
+        holder.style.animationDelay = item.delay;
+
+        const string = document.createElement('div');
+        string.className = 'string';
+        holder.appendChild(string);
+
+        if (item.type === 'balloon') {
+            const balloon = document.createElement('div');
+            balloon.className = 'balloon';
+            balloon.style.background =
+                `radial-gradient(circle at 30% 25%, #ffffff, ${item.color} 35%, ${item.color})`;
+            balloon.style.setProperty('--balloon-color', item.color);
+            holder.appendChild(balloon);
+        } else {
+            const symbol = document.createElement('div');
+            symbol.className = item.type === 'star' ? 'star' : 'moon';
+            symbol.textContent = item.type === 'star' ? '★' : '🌙';
+            holder.appendChild(symbol);
+        }
+
+        stage.appendChild(holder);
+    });
+}
+
+function celebrate() {
+    const symbols = ['🎈', '⭐', '✨', '💖', '🎉', '🌟', '💜'];
+
+    for (let i = 0; i < 90; i++) {
+        const piece = document.createElement('span');
+        piece.className = 'confetti';
+        piece.textContent = symbols[Math.floor(Math.random() * symbols.length)];
+        piece.style.left = Math.random() * 100 + 'vw';
+        piece.style.fontSize = (16 + Math.random() * 22) + 'px';
+        piece.style.animationDuration = (3 + Math.random() * 4) + 's';
+        piece.style.animationDelay = Math.random() * 1.5 + 's';
+
+        document.body.appendChild(piece);
+
+        setTimeout(() => piece.remove(), 9500);
+    }
+}
+
+function startSlideshow() {
+    if (slideTimer) return;
+
+    const dots = document.querySelectorAll('.dot');
+
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            showSlide(index);
+            clearInterval(slideTimer);
+            slideTimer = setInterval(() => showSlide(slideIndex + 1), 3500);
+        });
+    });
+
+    slideTimer = setInterval(() => {
+        showSlide(slideIndex + 1);
+    }, 3500);
+}
+
+function showSlide(index) {
+    const slides = document.querySelectorAll('.slide');
+    const dots = document.querySelectorAll('.dot');
+
+    slideIndex = (index + slides.length) % slides.length;
+
+    slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === slideIndex);
+    });
+
+    dots.forEach((dot, i) => {
+        dot.classList.toggle('active', i === slideIndex);
+    });
+}
+
+/* Original melody functions retained without changing the website layout */
+
+function startMusic() {
+    if (musicPlaying) return;
+
+    try {
+        musicContext = musicContext ||
+            new (window.AudioContext || window.webkitAudioContext)();
+
+        musicPlaying = true;
+
+        const resumeAudio = musicContext.state === 'suspended'
+            ? musicContext.resume()
+            : Promise.resolve();
+
+        resumeAudio.then(() => {
+            if (!musicPlaying) return;
+
+            playNextNote();
+
+            if (!musicTimer) {
+                musicTimer = setInterval(playNextNote, 420);
+            }
+        }).catch(() => {
+        });
+
+    } catch (error) {
+        console.log('Audio is not supported in this browser.');
+    }
+}
+
+function playNextNote() {
+    if (!musicContext || !musicPlaying) return;
+
+    const melody = [
+        0, 2, 4, 2, 1, 3, 5, 3,
+        0, 2, 4, 7, 5, 3, 2, 1,
+        0, 2, 4, 5, 4, 2, 1, 0
+    ];
+
+    const frequency = notes[melody[musicNote % melody.length]];
+    musicNote++;
+
+    const oscillator = musicContext.createOscillator();
+    const gain = musicContext.createGain();
+
+    oscillator.type = 'sine';
+    oscillator.frequency.value = frequency;
+
+    gain.gain.setValueAtTime(0.0001, musicContext.currentTime);
+    gain.gain.exponentialRampToValueAtTime(
+        0.10, musicContext.currentTime + 0.04
+    );
+    gain.gain.exponentialRampToValueAtTime(
+        0.0001, musicContext.currentTime + 0.36
+    );
+
+    oscillator.connect(gain);
+    gain.connect(musicContext.destination);
+
+    oscillator.start();
+    oscillator.stop(musicContext.currentTime + 0.38);
+}
+</script>
+
+</body>
+</html>
